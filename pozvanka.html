@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="makronka.png"
+    />
+    <title>Our Wedding</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Georgia&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img
+        src="pozvanka_svatba.svg"
+        alt="Wedding Invitation"
+      />
+      <!-- Scroll-down button -->
+      <button class="scroll-down-button">
+        <span>&#8595;</span>
+        <!-- Down arrow -->
+      </button>
+
+      <button class="second_scroll-down-button">
+        <span>&#8595;</span>
+        <p class="blizsi_info">BLIŽŠÍ INFORMACE</p>
+        <!-- Down arrow -->
+      </button>
+    </section>
+
+    <!-- Navigation -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="pozvanka.html">Pozvánka</a></li>
+          <li><a href="kudy k nam.html">Kudy k nám?</a></li>
+          <li><a href="harmonogram.html">Harmonogram</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="my k vam.html">My k Vám</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <section class="intro">
+        <h2>Kdy?</h2>
+        <p><b>20. 9. 2025 ve 14:00</b></p>
+      </section>
+      <section class="intro">
+        <h2>Kde?</h3>
+        <p><b>Obřad:</b> Prostřední bečva - Pustevny</p>
+        <p><em>(přibližně 10 minut od parkoviště)</em></p>
+        <p>
+          <b>Raut + afterparty:</b> Prostřední bečva - U Krajinů na zahradě 
+        </p>
+        <p><em>(bližší informace po obřadu)</em></p>
+      </section>
+      <section class="intro">
+        <a class ="hypertext"href="kudy k nam.html"><h2>Kudy k nám?</h2></a>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy;</p>
+    </footer>
+
+    <script>
+      document
+        .querySelector(".scroll-down-button")
+        .addEventListener("click", () => {
+          window.scrollTo({
+            top: 1285, // Adjust this value to control the scroll amount (in pixels)
+            behavior: "smooth",
+          });
+        });
+    </script>
+
+    <script>
+      document
+        .querySelector(".second_scroll-down-button")
+        .addEventListener("click", () => {
+          window.scrollTo({
+            top: 2105, // Adjust this value to control the scroll amount (in pixels)
+            behavior: "smooth",
+          });
+        });
+    </script>
+  </body>
+</html>
