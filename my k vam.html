@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My k Vám - Our Wedding</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="new css.css" />
   </head>
   <body>
     <header>
@@ -19,69 +19,23 @@
       </nav>
       <div id="current-page">My k Vám</div>
     </header>
+    <p class="my-k-vam-p">Milí svatební hosté,<br> 
 
+      abychom si naši svatbu mohli dovolit, a přesto si ji udělali hezkou, rádi bychom Vás požádali o malou pomoc. <br><br>Bychom byli opravdu vděční, kdybyste přinesli něco, co jste sami připravili nebo nasbírali. Třeba nějaký skvělý domácí koláč, upečenou buchtu, nebo ovoce ze zahrady. Pro nás to bude znamenat mnohem víc, než kupované dobroty, a navíc to dodá naší svatbě "domácí" nádech. <br><br>
+      
+      Rozhodně se nám nemusí ozvat všichni, ale byli bychom moc rádi, pokud ti, co rádi pečou, nebo prostě tvoří, aby se nám ozvali v rámci dotazníku a sdělili nám, jakou dobrotu přinesou (abychom náhodou neměli 10 buchet).</p>
+    <button><a href="https://docs.google.com/forms/d/e/1FAIpQLSfEXPBBfs8C4Y-o-w6i0TuKxCmIJ2M3lSWFzcMVsA017xiBVw/viewform?usp=dialog" target="_blank" class="dotaznik-odkaz"><p>Krátký dotazník</p></a></button>
+    
     <main>
-      <section class="query-form">
-        <h1>Dotazník</h1>
-        <form action="/submit_form" method="POST">
-          <div class="form-group">
-            <label for="name">Jméno:</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-
-          <div class="form-group">
-            <label for="question1">Otázka 1: Jak se známe?</label>
-            <textarea
-              id="question1"
-              name="question1"
-              rows="4"
-              required
-            ></textarea>
-          </div>
-
-          <div class="form-group">
-            <label for="question2">Otázka 2: Co si přejete na svatbě?</label>
-            <textarea
-              id="question2"
-              name="question2"
-              rows="4"
-              required
-            ></textarea>
-          </div>
-
-          <div class="form-group">
-            <label for="question3"
-              >Otázka 3: Máte nějaké alergie nebo dietní omezení?</label
-            >
-            <textarea
-              id="question3"
-              name="question3"
-              rows="4"
-              required
-            ></textarea>
-          </div>
-
-          <div class="form-group">
-            <label for="sweets">Jaké sladkosti/pečivo přinesete?</label>
-            <input type="text" id="sweets" name="sweets" required />
-          </div>
-
-          <button type="submit">Odeslat</button>
-        </form>
-
+      
         <!-- Display Previous Sweets Responses -->
         <div class="previous-responses">
           <h2>Co už ostatní přinášejí:</h2>
-          <ul>
-            {% for response in sweets_responses %}
-            <li>{{ response }}</li>
-            {% endfor %}
-          </ul>
+
+          <ul></ul>
+          <div class="box">
+            <p>Jahody</p>
+          </div>
         </div>
       </section>
     </main>

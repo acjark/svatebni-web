@@ -13,25 +13,15 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Georgia&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="new css.css" />
   </head>
   <body>
-    <!-- Hero Section -->
+        <!-- Hero Section -->
     <section class="hero">
-      <img
-        src="pozvanka_svatba.svg"
-        alt="Wedding Invitation"
-      />
-      <!-- Scroll-down button -->
-      <button class="scroll-down-button">
-        <span>&#8595;</span>
-        <!-- Down arrow -->
-      </button>
-
+      <img src="pozvanka_svatba.svg" alt="Wedding Invitation" />
       <button class="second_scroll-down-button">
         <span>&#8595;</span>
         <p class="blizsi_info">BLIŽŠÍ INFORMACE</p>
-        <!-- Down arrow -->
       </button>
     </section>
 
@@ -52,7 +42,7 @@
     <main id="main-content">
       <section class="intro">
         <h2>Kdy?</h2>
-        <p><b>20. 9. 2025 ve 14:00</b></p>
+        <p><b>20. 9. 2025</b> ve <b>14:00</b></p>
       </section>
       <section class="intro">
         <h2>Kde?</h3>
@@ -64,7 +54,7 @@
         <p><em>(bližší informace po obřadu)</em></p>
       </section>
       <section class="intro">
-        <a class ="hypertext"href="kudy k nam.html"><h2>Kudy k nám?</h2></a>
+        <a href="kudy k nam.html"><h2 class="h2_pozvanka"">Kudy k nám?</h2></a>
       </section>
     </main>
 
@@ -73,26 +63,6 @@
       <p>&copy;</p>
     </footer>
 
-    <script>
-      document
-        .querySelector(".scroll-down-button")
-        .addEventListener("click", () => {
-          window.scrollTo({
-            top: 1285, // Adjust this value to control the scroll amount (in pixels)
-            behavior: "smooth",
-          });
-        });
-    </script>
-
-    <script>
-      document
-        .querySelector(".second_scroll-down-button")
-        .addEventListener("click", () => {
-          window.scrollTo({
-            top: 2105, // Adjust this value to control the scroll amount (in pixels)
-            behavior: "smooth",
-          });
-        });
-    </script>
+    
   </body>
 </html>
