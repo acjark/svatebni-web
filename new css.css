@@ -45,7 +45,7 @@ header {
   left: 0;
   width: 100%;
   background-color: rgba(178, 226, 242, 0.9); /* Less transparent for better readability */
-  padding: 10px 5px; /* Smaller padding on mobile */
+  padding: 5px 5px; /* Smaller padding on mobile */
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -147,7 +147,7 @@ footer {
 }
 
 .p_galerie{
-  margin-top: 4%;
+  margin-top: 14vh;
   color:gray;
 }
 
@@ -296,7 +296,7 @@ button:hover {
 
 .harmonogram {
   text-align: center;
-  margin-top: 6%; /* Reduced for mobile */
+  margin-top: 14vh; /* Reduced for mobile */
   font-size: clamp(1.5em, 4vw, 2em);
 }
 
@@ -327,7 +327,7 @@ a.dotaznik-odkaz {
 
 .my-k-vam-p {
   text-align: left;
-  margin-top: 5%;
+  margin-top: 15vh;
   margin-inline: 5%;
   /* margin: 20px 15px; Reduced for mobile */
 }
