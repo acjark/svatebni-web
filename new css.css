@@ -255,7 +255,7 @@ button:hover {
 
 .map {
   width: 100%;
-  max-width: 600px; /* Prevent map from being too wide */
+  max-width: 500px; /* Prevent map from being too wide */
   margin: 0 auto;
 }
 
