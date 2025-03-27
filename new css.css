@@ -51,28 +51,35 @@ header {
 nav ul {
   list-style: none;
   padding: 10px;
-  margin:auto;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-around; /* Distribute space evenly */
+  justify-content:space-around; /* or space-between */
   align-items: center;
   width: 100%;
+  min-width: max-content; /* Critical: Force full width of all items */
+  overflow-x: auto; /* Optional: Enable horizontal scroll if needed */
+  scrollbar-width: none; /* Hide scrollbar (Firefox) */
+  flex-direction: row;
+}
+
+nav ul::-webkit-scrollbar {
+  display: none; /* Hide scrollbar (Chrome/Safari) */
 }
 
 nav ul li {
-  flex:1; /* Each item takes equal space */
-  
-  text-align: center; /* Center the text */
+  flex: none; /* Disable flex grow/shrink (keeps original width) */
+  padding: 0.1rem; /* Adjust spacing between items */
+  text-align: center;
 }
 
 nav ul li a {
   text-decoration: none;
+  padding: 0.7rem;
   color: #fff9ef;
-  font-size: clamp(0.8rem, 2vw, 1.2em); /* Responsive font size */
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
   font-weight: 600;
-  transition: color 0.3s ease;
-  white-space: nowrap; /* Prevent text from wrapping */
+  white-space: nowrap; /* Prevent text wrapping */
 }
-
 nav ul li a:hover {
   color: #ffd1dc; /* Soft pastel pink on hover */
 }
@@ -259,8 +266,13 @@ button:hover {
   }
 
   nav ul {
-    flex-direction: column; /* Stack navigation items vertically */
-    gap: 10px;
+    flex-direction: row;  /* místo column nastavíme row */
+    flex-wrap: wrap;  /* pokud je málo místa, zarovná je do více řádků */
+    justify-content: center; /* zarovná odkazy na střed */
+    gap: 2px; /* mezery mezi odkazy */
+
+  }
+  
   }
 
   .second_scroll-down-button {
