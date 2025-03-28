@@ -226,7 +226,7 @@ button {
   width: 120px; /* Larger for touch */
   padding: 12px;
   font-size: clamp(1em, 3vw, 1.2em);
-  background-color: #9a90d5a6;
+  background-color: rgb(178, 226, 242);
   color: #fff;
   border: none;
   border-radius: 15px;
@@ -249,7 +249,7 @@ button:hover {
 
 .kudy-knam h1 {
   padding: 10px;
-  margin-top: 10%; /* Reduced for mobile */
+  margin-top: 14%; /* Reduced for mobile */
   font-size: clamp(1.5em, 4vw, 2em);
 }
 
@@ -269,6 +269,7 @@ button:hover {
   font-family: 'Playfair Display', serif;
   color: darkblue;
   font-size: clamp(1em, 3vw, 1.1em);
+
 }
 
 /* Schedule - Responsive */
@@ -351,11 +352,7 @@ a.dotaznik-odkaz {
     gap: 5px; /* Smaller gap between nav items */
   }
   
-  .second_scroll-down-button {
-    top: 180vh; /* Better positioning for mobile */
-  }
-  
-  .schedule {
+.schedule {
     grid-template-columns: 1fr 3fr; /* Adjusted ratio for mobile */
     
   }
