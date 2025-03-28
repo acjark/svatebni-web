@@ -245,6 +245,7 @@ button:hover {
   align-items: center;
   text-align: center;
   padding: 0 15px; /* Added padding for mobile */
+  margin-top:7%;
 }
 
 .kudy-knam h1 {
